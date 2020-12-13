@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Poppins&display=swap");
+:root {
+    --gray: #3A4454;  /*rgb(58, 68, 84)*/
+    --cream: #F5DDDD;
+    --violet: #6B4E71; /* rgb(107, 78, 113)*/
+    --white: #fff;
+    --black: #000;
+    --lightgray: #b3b3b3;
+}
+/*************************
+Basic styles
+*************************/
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", serif;
+}
+.bg-light {
+  background-color: rgba(234, 207, 210,.8) !important;
+  }
+.text-danger{
+  color: var(--violet) !important;
+}
+/*************************
+          Navbar
+*************************/
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Josefin Sans", serif;
+  letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+  background-color: var(--violet);
+  color: var(--cream);
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding: 0.7rem 1rem;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,0.4);
+}
+a.text-danger:focus, a.text-danger:hover {
+  color: #58576b!important;
+}
+
+/*************************
+        Header Home
+*************************/
+.headerHome{
+  background-image: linear-gradient(rgba(107, 78, 113,.8), rgba(255,255,255,.8)), url(img/header-background.png);
+  height: 100vh;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.headerHome h1{
+  font-size: 4rem;
+  font-weight: 400;
+}
+.headerHome p{
+  font-size: 1.4rem;
+}
+/*************************
+        Development
+*************************/
+.underline {
+  margin: 20px 35%;
+  height: 8px;
+  background-color: var(--violet);
+}
+.development img {
+  padding: 30px;
+}
+.development img:hover {
+  transform: rotate(20deg);
+  transition: 0.6s ease;
+}
+/*************************
+        Skills
+*************************/
+.skills{
+  background-image: linear-gradient(to left, rgba(107, 78, 113,.95), rgba(58, 68, 84,.95)), url(img/bg.png);
+  height: 60vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.skills h2{
+  font-size: 3rem;
+}
+.skills h2 span {
+  color: var(--cream) !important;
+}
+.skills li {
+  line-height: 1.7;
+  font-size: 20px;
+}
+.skills .fa-laptop-code {
+  font-size: 10rem;
+  text-shadow: 0 0 15px var(--black);
+}
+/*************************
+        Footer
+*************************/
+footer{
+  background-color: var(--cream);
+}
+.underline2{
+  margin: 20px 40%;
+  height: 8px;
+  background-color: var(--violet);
+}
+footer ul {
+  padding-left: 0;
+
+  font-size: 2.5rem;
+}
+footer a{
+  color: var(--violet) !important;
+  padding: 0 10px;
+}
+footer a:hover {
+  color: var(--gray);
+  transition-duration: 0.7s;
+}
+footer i:hover {
+  animation: footer 0.7s ease;
+}
+@keyframes footer {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/*************************
+        About
+*************************/
+.border-warning {
+  border-color: var(--violet) !important;
+}
+.about .holder {
+  box-shadow: 0 0 25px var(--lightgray);
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+.about img {
+  transition: transform 2s ease;
+}
+.about img:hover {
+  transform: scale(1.3);
+}
+.about .fotoHolder {
+  overflow: hidden;
+}
+
+/*************************
+        Contact
+*************************/
+.contact h1{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.contact .underline2{
+  margin-top: 0;
+}
+.contact{
+  background-image: linear-gradient(rgba(107, 78, 113,.8), rgba(255,255,255,.99)), url(img/novisad.jpg);
+  height: 80vh;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-position: center;
+  background-size: cover;
+}
+
+/*************************
+        whereContact
+*************************/
+.whereContact i {
+  font-size: 3rem;
+  color: var(--violet);
+  padding-bottom: 30px;
+  }
+/*************************
+        Responsive
+*************************/
+
+ @media(max-width: 768px){
+.skills .col-md-6{
+  padding-bottom: 40px;
+}
+.skills{
+  height: auto;
+}
+.about .col-md-4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.about{
+  margin-bottom: 15px !important;
+}
+.whereContact .col-md-4{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.whereContact {
+  padding-bottom: 20px !important;
+}
+  }
+  @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation:portrait)
+  {
+  .headerHome {
+    height: 60vh;
+  }
+  }
