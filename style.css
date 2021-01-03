@@ -1,3 +1,12 @@
+/*
+Theme Name: CreaTIVA
+Theme URI: https://antoniovalda.com
+Author: Lav Antonio Valda Rajic
+Description: Simple WP  theme
+Version: 1.0
+*/
+
+
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Poppins&display=swap");
 :root {
     --gray: #3A4454;  /*rgb(58, 68, 84)*/
@@ -28,6 +37,28 @@ h6 {
   }
 .text-danger{
   color: var(--violet) !important;
+}
+.development .button {
+  background: var(--violet);
+  padding: 11px 25px;
+  color: var(--white);
+  font-size: 1.0rem;
+  border: 2px solid var(--violet);
+  border-radius: 30px;
+  justify-content: center;
+}
+.development .button:hover {
+  background: var(--cream);
+  cursor: pointer;
+  transition: .3s ease;
+  border: 2px solid var(--violet);
+  color: var(--violet);
+  border-radius: 30px;
+  font-weight: 650;
+  text-decoration: none;
+}
+.positionBtn{
+  text-align: right;
 }
 /*************************
           Navbar
@@ -83,10 +114,16 @@ a.text-danger:focus, a.text-danger:hover {
 }
 .development img {
   padding: 30px;
+  display: block;
+  height: auto;
+  width: 100%;
 }
 .development img:hover {
   transform: rotate(20deg);
   transition: 0.6s ease;
+}
+.development p{
+  text-align: justify;
 }
 /*************************
         Skills
@@ -104,16 +141,33 @@ a.text-danger:focus, a.text-danger:hover {
 .skills h2{
   font-size: 3rem;
 }
-.skills h2 span {
-  color: var(--cream) !important;
+.skills a{
+    color: var(--cream) !important;
+}
+.skills a:hover {
+  text-decoration: none;
+  color: var(--black) !important;
+  transition: 0.3s ease;
 }
 .skills li {
   line-height: 1.7;
   font-size: 20px;
+  text-decoration: none;
 }
 .skills .fa-laptop-code {
   font-size: 10rem;
   text-shadow: 0 0 15px var(--black);
+}
+/*************************
+    Development Skills
+*************************/
+.development .skills{
+  width: 35%;
+  height: auto;
+}
+.development .skills .col-md-10{
+  position: fixed;
+  padding-left: 2rem;
 }
 /*************************
         Footer
